@@ -1,0 +1,14 @@
+--- 
+title: "Cultivating Collaborative Analysis Development"
+author: "Alex Spurrier"
+date: "`r Sys.Date()`"
+output: bookdown::gitbook
+documentclass: book
+link-citations: yes
+github-repo: alspur/capstone-project
+description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
+---
+
+# About this book
+
+This is a test.
