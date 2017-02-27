@@ -1,5 +1,5 @@
 --- 
-title: "Cultivating Collaborative Analysis Development"
+title: "Collaborative Analysis Development"
 author: "Alex Spurrier"
 date: "`r Sys.Date()`"
 output: bookdown::gitbook
