@@ -6,7 +6,7 @@ output: bookdown::gitbook
 documentclass: book
 link-citations: yes
 github-repo: alspur/capstone-project
-description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
+description: "This book is part of my SDP Fellowship capstone project"
 twitter-handle: alspur
 ---
 
