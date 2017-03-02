@@ -1,1 +1,8 @@
 # Establish systems
+
+## Common analysis format
+
+## Style guide
+
+## Procedural checklists
+
