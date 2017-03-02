@@ -75,11 +75,27 @@
 </ul></li>
 <li class="chapter" data-level="4" data-path="tools-of-the-trade.html"><a href="tools-of-the-trade.html"><i class="fa fa-check"></i><b>4</b> Tools of the trade</a><ul>
 <li class="chapter" data-level="4.1" data-path="tools-of-the-trade.html"><a href="tools-of-the-trade.html#data-analysis-software"><i class="fa fa-check"></i><b>4.1</b> Data analysis software</a></li>
+<li class="chapter" data-level="4.2" data-path="tools-of-the-trade.html"><a href="tools-of-the-trade.html#version-control"><i class="fa fa-check"></i><b>4.2</b> Version control</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="communication-is-key.html"><a href="communication-is-key.html"><i class="fa fa-check"></i><b>5</b> Communication is key</a></li>
-<li class="chapter" data-level="6" data-path="establish-systems.html"><a href="establish-systems.html"><i class="fa fa-check"></i><b>6</b> Establish systems</a></li>
-<li class="chapter" data-level="7" data-path="collaborate-on-analysis-development.html"><a href="collaborate-on-analysis-development.html"><i class="fa fa-check"></i><b>7</b> Collaborate on analysis development</a></li>
-<li class="chapter" data-level="8" data-path="identify-pain-points.html"><a href="identify-pain-points.html"><i class="fa fa-check"></i><b>8</b> Identify pain points</a></li>
+<li class="chapter" data-level="5" data-path="communication-is-key.html"><a href="communication-is-key.html"><i class="fa fa-check"></i><b>5</b> Communication is key</a><ul>
+<li class="chapter" data-level="5.1" data-path="communication-is-key.html"><a href="communication-is-key.html#meet-regularly"><i class="fa fa-check"></i><b>5.1</b> Meet regularly</a></li>
+<li class="chapter" data-level="5.2" data-path="communication-is-key.html"><a href="communication-is-key.html#establish-norms"><i class="fa fa-check"></i><b>5.2</b> Establish norms</a></li>
+<li class="chapter" data-level="5.3" data-path="communication-is-key.html"><a href="communication-is-key.html#review-code"><i class="fa fa-check"></i><b>5.3</b> Review code</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="establish-systems.html"><a href="establish-systems.html"><i class="fa fa-check"></i><b>6</b> Establish systems</a><ul>
+<li class="chapter" data-level="6.1" data-path="establish-systems.html"><a href="establish-systems.html#common-analysis-format"><i class="fa fa-check"></i><b>6.1</b> Common analysis format</a></li>
+<li class="chapter" data-level="6.2" data-path="establish-systems.html"><a href="establish-systems.html#style-guide"><i class="fa fa-check"></i><b>6.2</b> Style guide</a></li>
+<li class="chapter" data-level="6.3" data-path="establish-systems.html"><a href="establish-systems.html#procedural-checklists"><i class="fa fa-check"></i><b>6.3</b> Procedural checklists</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="collaborate-on-analysis-development.html"><a href="collaborate-on-analysis-development.html"><i class="fa fa-check"></i><b>7</b> Collaborate on analysis development</a><ul>
+<li class="chapter" data-level="7.1" data-path="collaborate-on-analysis-development.html"><a href="collaborate-on-analysis-development.html#working-together-on-github"><i class="fa fa-check"></i><b>7.1</b> Working together on Github</a></li>
+<li class="chapter" data-level="7.2" data-path="collaborate-on-analysis-development.html"><a href="collaborate-on-analysis-development.html#code-review"><i class="fa fa-check"></i><b>7.2</b> Code review</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="identify-pain-points.html"><a href="identify-pain-points.html"><i class="fa fa-check"></i><b>8</b> Identify pain points</a><ul>
+<li class="chapter" data-level="8.1" data-path="identify-pain-points.html"><a href="identify-pain-points.html#figure-out-common-problems"><i class="fa fa-check"></i><b>8.1</b> Figure out common problems</a></li>
+<li class="chapter" data-level="8.2" data-path="identify-pain-points.html"><a href="identify-pain-points.html#has-anyone-already-solved-this-problem"><i class="fa fa-check"></i><b>8.2</b> Has anyone already solved this problem?</a></li>
+<li class="chapter" data-level="8.3" data-path="identify-pain-points.html"><a href="identify-pain-points.html#develop-internal-solutions"><i class="fa fa-check"></i><b>8.3</b> Develop internal solutions</a></li>
+</ul></li>
 <li class="chapter" data-level="9" data-path="share-beyond-your-walls.html"><a href="share-beyond-your-walls.html"><i class="fa fa-check"></i><b>9</b> Share beyond your walls</a></li>
 <li class="chapter" data-level="10" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>10</b> Conclusion</a></li>
 </ul>
@@ -108,6 +124,14 @@
 <p>The most commonly used data analysis software is Microsoft Excel. While nearly every analyst cuts their teeth crafting spreadsheets and pivot tables in this popular software, it’s not an ideal platform for professional analysis developers. Excel’s cell-based structure obscures the formulae that drive analysis work, making it hard for others (and often yourself) to understand what’s actually going on “under the hood.”</p>
 <p>Scripting-based data analysis languages are the cure for the common spreadsheet. They make the entire analysis process transparent by explicitly stating what actions will happen and the order in which they will be executed.</p>
 <p>I use and heartily recommend using R as your main platform for data analysis. It is free, open-source, and has a vibrant community of developers and practitioners working to improve the language.</p>
+</div>
+<div id="version-control" class="section level2">
+<h2><span class="header-section-number">4.2</span> Version control</h2>
+<p>At some point, we’ve all worked on a project where we’ve saved multiple versions of a file. “Save as…” is a great tool for simple projects when you’re going from “v1” to “v2” to “final_draft,” but we can quickly push on the edges of this approach’s usefulness.</p>
+<p>If you want to go back to an earlier iteration of your work, it’s hard to know which version you’re looking for or what changed from “v3” to “v4.” If you’re working with multiple people, emailing documents back and forth, it’s amazing how quickly you can lose track of which “v3FINAL” document is the version you want to be looking at right now - is it the one Jane sent yesterday or is the one Johnny sent today?</p>
+<p>Version control systems help to alleviate these problems. Instead of requiring you to save multiple versions of one file, version control software allows you to have one file, but <em>track all of the changes made since its inception.</em></p>
+<p>The most commonly used version control system is Git, which can be paired with the GitHub service to keep a copy of your documents and the changes you’ve made to them in the cloud.</p>
+<p>Link to Happy Git and GitHub for the useR</p>
 
 </div>
 </div>
