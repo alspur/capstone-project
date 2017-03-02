@@ -1,1 +1,7 @@
 # Identify pain points
+
+## Figure out common problems
+
+## Has anyone already solved this problem?
+
+## Develop internal solutions
