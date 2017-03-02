@@ -12,3 +12,14 @@ Scripting-based data analysis languages are the cure for the common spreadsheet.
 
 I use and heartily recommend using R as your main platform for data analysis. It is free, open-source, and has a vibrant community of developers and practitioners working to improve the language.
 
+## Version control
+
+At some point, we've all worked on a project where we've saved multiple versions of a file. "Save as..." is a great tool for simple projects when you're going from "v1" to "v2" to "final_draft," but we can quickly push on the edges of this approach's usefulness. 
+
+If you want to go back to an earlier iteration of your work, it's hard to know which version you're looking for or what changed from "v3" to "v4." If you're working with multiple people, emailing documents back and forth, it's amazing how quickly you can lose track of which "v3FINAL" document is the version you want to be looking at right now - is it the one Jane sent yesterday or is the one Johnny sent today?
+
+Version control systems help to alleviate these problems. Instead of requiring you to save multiple versions of one file, version control software allows you to have one file, but *track all of the changes made since its inception.* 
+
+The most commonly used version control system is Git, which can be paired with the GitHub service to keep a copy of your documents and the changes you've made to them in the cloud.
+
+ Link to Happy Git and GitHub for the useR 
