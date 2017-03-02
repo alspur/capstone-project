@@ -23,4 +23,3 @@ Errors will happen. Parker notes that we can learn from operations engineers, pa
 Reducing error is a big reason to care about developing a healthy, collaborative culture among "analysis developers," but there are many other benefits to improving how these folks work. It can help improve the quality and depth of analysis as they start to learn from one another. A more collaborative environment can also improve the speed of analysis as analysis development moves from an ad-hoc approach to one that follows a more standardized routine. This will also help to improve institutional knowledge of the analysis development process, making it easier to integrate new staff and maintain stability after a personnel transition. 
 
 Education agencies could develop more accurate, high-quality, and reproducible analyses, but it order to do so, they need to deliberately build a strong collaborative culture among their analysis developers.
-
