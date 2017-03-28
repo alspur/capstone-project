@@ -2,4 +2,27 @@
 
 ## Your primary collaborator
 
+No man is an island, and analysis developers are no different. 
+Even if you are working as the lone analysis developer in your agency, it doesn't mean you can neglect the structures a team needs to be successful. As Hadley Wickham notes in his {Expressing yourself with R](https://youtu.be/1POb5fx_m3I?t=34m12s) talk:
+
+>"Every project you work on is fundamentally collaborative. Even if you're not working with any other person, you are always working with *future you*. And you really don't want to be in a situation where future you has no idea what past you was thinking, because past you will not respond to any emails."
+
+The rest of this book assumes that you have embraced this idea. No matter the size of your team, from 1 to `n`, it is critical that you think about, test, and improve the systems you use to collaborate with others.
+
 ## E pluribus unum
+
+Teams of analysis developers don't form on their own - it takes leadership to build, grow, and maintain. The work can be challenging, as many prospective team members may come from differnet backgrounds, use different software packages, or tackle analysis via ideosyncratic (at sometimes inscrutable) methods. Yet at the same time, the heterogenatiy of your team is also an asset. The differing perspectives and strengths of your team's members will allow you to survey problems from different angles and help mitigate the danger of groupthink.
+
+The leader of a analysis development team needs to do more than run meetings and assign work. They may help provide support on implementing particualr methodologies, perform final code reviews, and approve analysis before it is shipped outside the team. But the most crticial job they have is to ensure a healthy team culture.
+
+Building a strong team culture is hard. It relies on mutual trust, humility, and honesty - virtues that aren't always easy to embody. But it can be done. As you start to think intentionally about your team's culture, this sequence is a helpful staring point:
+
+1. Understand what your team culture is like right now.
+2. Define what direction your culture needs to move.
+3. Identify the behaviors/routines your team will implement to get there.
+4. Implement the selected behaviors/routines.
+5. Repeat.
+
+This process is a variant of the [Observe-Orient-Decide-Act (OODA) loop](https://en.wikipedia.org/wiki/OODA_loop) a strategic decision-making processed developed bya a fighter pilot. While building a team of analysis developer's isn't *quite* as intesnse as a dogfight, this process of intentional observation, decision-making, and action is an extremely helpful way to start improving your team's culture at any stage of development.
+
+Developing a strong team culture is not a goal - it's a continual process. This variation of the OODA loop supports thougthful observation, adaptation, and action. If your team is just starting to meet and is very heterogeneous, you won't be able to get everybody working on the same software and using the same processes overnight. It will require intentional, incremental, and iterative change over time. 
