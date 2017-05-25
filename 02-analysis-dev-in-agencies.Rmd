@@ -22,7 +22,15 @@ If not, this book can help.
 
 ## Who are we talking about?
 
+Education agency employees vary in their iteraction with data. Some directly manage student information systems (pretty data-heavy work) while others mostly consume data from reports and briefings. Is there a clear point on that spectrum which clearly deliniates someone as an "analyst?" 
 
+Probably not, but it's helpful to set a working definition for our purposes:
+
+> An *analyst* in an education agency is anyone whose primary work is focused on the collection, transformation, and communication of data.
+
+Under this definition, and analyst is less defined by the tools and techniques they use than the amount of time they spend working with data. Some analysts are spreadsheet warriors while others write code. Some analysts will only need the `SUM()` and `AVERAGE()` functions in Excel while others will apply sophisicated machine learning techniques. 
+
+At the end of the day, anyone who spends most of their workday collecting, transforming, and sharing data is an analyst. 
 
 ## Why should we care about the culture of data analysis?
 
