@@ -1,9 +1,22 @@
 # Establish systems
 
+
+
 ## Common analysis format
+
+- Identify optimal workflows
+- Create common analysis structure
+- Develop analysis templates (.Rmd)
 
 ## Style guide
 
+- It's a small point of friction, but there's no reason to have it
+- Come to a consensus and stick with one style
+
 ## Procedural checklists
+
+- Seprate from analysis templates, start to identify common procedures
+- Create checklists
+- If it works for airline pilots and surgons, it can work for analysis developers.
 
 ## Code review
