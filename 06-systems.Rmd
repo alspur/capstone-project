@@ -6,21 +6,88 @@ This isn't to say that you should strive to have every analysis developer's work
 
 ## Common analysis format
 
+One of the first tasks your team should tackle is developing a common format for analysis. Developing a common format for analysis can help improve understanding of scripts even if they are coded in different languages. 
+
+A helpful starting point for this conversation is a diagram found in chapter 2 of [R for Data Science](http://r4ds.had.co.nz/explore-intro.html):
+
+![worflow_diagram](http://r4ds.had.co.nz/diagrams/data-science-explore.png)
+
+Our team developed our standard analysis template based on this workflow. We start by first importing all packages and raw data that we will need for the analysis. The second section of our code gets the data in a "tidy" format - variables get converted to the proper type, missing variables are addressed, and tables are reshaped to ensure that each column is a variable and each row is a single observation (more on tidy data can be found in [R for Data Science chapter 12.2](http://r4ds.had.co.nz/tidy-data.html)). Once we have tidy data, we then move on to the heart of our analysis work, which always involves some combination of data transformation, modeling, or visualization. Once all of those steps are completed, we then start to develop how we will communicate the results of our analysis. 
+
+Here is the exact code we use in our template analysis script, which is [available on GitHub](https://github.com/alspur/analysis_dev_templates/blob/master/R/analysis_template.R):
+
+```{r}
+# title of analysis
+#
+# date started (yyyy-mm-dd)
+# lead analysis developer
+#
+# notes re: purpose of project
+
+# load ---------------------------
+
+# load packages 
+
+# load raw data
 
 
-- Identify optimal workflows
-- Create common analysis structure
-- Develop analysis templates (.Rmd)
+# clean ---------------------------
+
+# prepare data in a tidy format
+
+
+# analyze -------------------------
+
+# transform, model, and/or visualize data
+
+# communicate ---------------------
+
+# produce objects (tables, charts, etc) for communcating results
+
+```
+
+If all of your team starts analysis projects with this template or one that best suits your needs, it reduces the barriers ahead of each team member understanding what an analysis script is doing. You will be able to quickly isolate potential errors or identify creative apporaches to replicate in other analyses. 
 
 ## Style guide
 
-- It's a small point of friction, but there's no reason to have it
-- Come to a consensus and stick with one style
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SsoOG6ZeyUI" frameborder="0" allowfullscreen></iframe>
+
+Code style is a constant topic of debate among software developers. Naming conventions, commenting practices, whitespace, and of course, tabs vs. spaces.
+
+There are many pre-defined style guides out there for statistical programming lagnuages. As citizens of the `tidyverse`, our team adheres to [the Tidyverse R Style Guide](http://style.tidyverse.org). 
+
+That may be the right choice for your team or it might not. The point is that you and your teammates need to make a choce and stick to it. It will make reviewing code much, much easier. 
 
 ## Procedural checklists
 
-- Seprate from analysis templates, start to identify common procedures
-- Create checklists
-- If it works for airline pilots and surgons, it can work for analysis developers.
+Apart from your analysis structure and style, your team should also define the procedure for tasks you'll do on a routine or semi-routine schedule. Once you've defined these procedures, be sure to document them in a series of checklists. Several of [o]ur team's checklists are available on GitHub](https://github.com/alspur/analysis_dev_templates/tree/master/checklists).
 
-## Code review
+Why checklists? If it works for airline pilots and surgons, it can work for analysis developers. Atul Gawande's book, [The Checklist Manifesto](https://www.amazon.com/Checklist-Manifesto-How-Things-Right/dp/0312430000), explains the value of checklists to highly skilled workers.
+
+Professionals of all varieties - programmers, doctors, teachers, pilots, etc. - perform cognatively demanding tasks on regular basis in high-stakes settings. They apply the skills they've honed through training, their understanding of their field, and their general experience to execute complex tasks. But no matter how competent or prepared these professionals are, they still make mistakes. Gawande writes:
+
+> “In a complex environment, experts are up against two main difficulties. The first is the fallibility of human memory and attention, especially when it comes to mundane, routine matters that are easily overlooked under the strain of more pressing events.”
+>
+> ...
+>
+> “A further difficulty, just as insidious, is that people can lull themselves into skipping steps even when they remember them. In complex processes, after all, certain steps don’t always matter. Perhaps the elevator controls on airplanes are usually unlocked and a check is pointless most of the time. Perhaps measuring all four vital signs uncovers a worrisome issue in only one out of fifty patients. “This has never been a problem before,” people say. Until one day it is.”
+
+There's nothing wrong with confidence in your ability to practice your profession, but it does breed a degree hubris that even when seemingly benign, can lead to significant errors. Gwande provides several examples of this in the medical field, where skipping seemingly obvious steps can lead to someone having their right knee opened up even if they're in for an ACL repair on their left knee. 
+
+The concept of minimizing mistakes in routine processes is also applicable to  analysis development. Each analysis project involves follows the broad format of importing, cleaning, transforming, and reporting data. If small steps along the way aren't double-checked, a tiny error can lead to significant problems with the results. 
+
+Gwande stresses that using checklists to minimize error isn't meant to dumb down the work of professionals. Instead, he argues:
+
+> “It is common to misconceive how checklists function in complex lines of work. They are not comprehensive how-to guides, whether for building a skyscraper or getting a plane out of trouble. They are quick and simple tools aimed to buttress the skills of expert professionals.”
+>
+> ...
+>
+> “You want people to make sure to get the stupid stuff right. Yet you also want to leave room for craft and judgment and the ability to respond to unexpected difficulties that arise along the way”
+
+Checklists must strike an important balance. They need to cover enough critical points in a process to minimize the "stupid stuff" that could happen, but they also need the flexibility and brevity to be useful in a real-world setting. Gwande explains the difference between a good checklist and a bad one: 
+
+> “Bad checklists are vague and imprecise. They are too long; they are hard to use; they are impractical. They are made by desk jockeys with no awareness of the situations in which they are to be deployed. They treat the people using the tools as dumb and try to spell out every single step. They turn people’s brains off rather than turn them on.
+>
+> Good checklists, on the other hand, are precise. They are efficient, to the point, and easy to use even in the most difficult situations. They do not try to spell out everything—a checklist cannot fly a plane. Instead, they provide reminders of only the most critical and important steps—the ones that even the highly skilled professionals using them could miss. Good checklists are, above all, practical.”
+
+Work with your team to develop good checklists. The most valuable checklists you'll devleop are the ones you actually end up using. Start indentifying the critical steps in your work, write them down, and iterate your checklists to help your team minimize error and ensure consistent quality.

@@ -25,7 +25,7 @@
 <meta name="author" content="Alex Spurrier">
 
 
-<meta name="date" content="2017-07-06">
+<meta name="date" content="2017-07-11">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -49,6 +49,43 @@
 
 
 
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
 
 </head>
 
@@ -87,11 +124,10 @@
 <li class="chapter" data-level="6.1" data-path="establish-systems.html"><a href="establish-systems.html#common-analysis-format"><i class="fa fa-check"></i><b>6.1</b> Common analysis format</a></li>
 <li class="chapter" data-level="6.2" data-path="establish-systems.html"><a href="establish-systems.html#style-guide"><i class="fa fa-check"></i><b>6.2</b> Style guide</a></li>
 <li class="chapter" data-level="6.3" data-path="establish-systems.html"><a href="establish-systems.html#procedural-checklists"><i class="fa fa-check"></i><b>6.3</b> Procedural checklists</a></li>
-<li class="chapter" data-level="6.4" data-path="establish-systems.html"><a href="establish-systems.html#code-review"><i class="fa fa-check"></i><b>6.4</b> Code review</a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="collaborate-on-analysis-development.html"><a href="collaborate-on-analysis-development.html"><i class="fa fa-check"></i><b>7</b> Collaborate on analysis development</a><ul>
 <li class="chapter" data-level="7.1" data-path="collaborate-on-analysis-development.html"><a href="collaborate-on-analysis-development.html#working-together-on-github"><i class="fa fa-check"></i><b>7.1</b> Working together on Github</a></li>
-<li class="chapter" data-level="7.2" data-path="collaborate-on-analysis-development.html"><a href="collaborate-on-analysis-development.html#code-review-1"><i class="fa fa-check"></i><b>7.2</b> Code review</a></li>
+<li class="chapter" data-level="7.2" data-path="collaborate-on-analysis-development.html"><a href="collaborate-on-analysis-development.html#code-review"><i class="fa fa-check"></i><b>7.2</b> Code review</a></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="identify-pain-points.html"><a href="identify-pain-points.html"><i class="fa fa-check"></i><b>8</b> Identify pain points</a><ul>
 <li class="chapter" data-level="8.1" data-path="identify-pain-points.html"><a href="identify-pain-points.html#figure-out-common-problems"><i class="fa fa-check"></i><b>8.1</b> Figure out common problems</a></li>
@@ -119,31 +155,78 @@
             <section class="normal" id="section-">
 <div id="establish-systems" class="section level1">
 <h1><span class="header-section-number">Chapter 6</span> Establish systems</h1>
+<p>Once your team establishes a strong communication system, it’s time to start building systems that will support effective collaboration. Meeting regularly and establishing norms set the foundation for you to have an open and constructive dialogue about apporaches and processes that can give your team more constistency and standarization in the development of analysis products.</p>
+<p>This isn’t to say that you should strive to have every analysis developer’s work look <em>identical</em> - if that were the case, you could simply write a script to automate it. Moving your team towards <em>more</em> and not <em>total</em> consistency and standardization means that when yoy have opportunities to provide feedback on work, the barriers to understanding are minimized. Seemingly minor roadblocks to understanding what a script is doing, like its organization or how variables are named, each serve as a cognative tax. Establishing good systems will help you limit the level of cognative taxation required to read a teammates’s code, leaving more capacity to engage in the work of analysis development.</p>
 <div id="common-analysis-format" class="section level2">
 <h2><span class="header-section-number">6.1</span> Common analysis format</h2>
-<ul>
-<li>Identify optimal workflows</li>
-<li>Create common analysis structure</li>
-<li>Develop analysis templates (.Rmd)</li>
-</ul>
+<p>One of the first tasks your team should tackle is developing a common format for analysis. Developing a common format for analysis can help improve understanding of scripts even if they are coded in different languages.</p>
+<p>A helpful starting point for this conversation is a diagram found in chapter 2 of <a href="http://r4ds.had.co.nz/explore-intro.html">R for Data Science</a>:</p>
+<div class="figure">
+<img src="http://r4ds.had.co.nz/diagrams/data-science-explore.png" alt="worflow_diagram" />
+<p class="caption">worflow_diagram</p>
+</div>
+<p>Our team developed our standard analysis template based on this workflow. We start by first importing all packages and raw data that we will need for the analysis. The second section of our code gets the data in a “tidy” format - variables get converted to the proper type, missing variables are addressed, and tables are reshaped to ensure that each column is a variable and each row is a single observation (more on tidy data can be found in <a href="http://r4ds.had.co.nz/tidy-data.html">R for Data Science chapter 12.2</a>). Once we have tidy data, we then move on to the heart of our analysis work, which always involves some combination of data transformation, modeling, or visualization. Once all of those steps are completed, we then start to develop how we will communicate the results of our analysis.</p>
+<p>Here is the exact code we use in our template analysis script, which is <a href="https://github.com/alspur/analysis_dev_templates/blob/master/R/analysis_template.R">available on GitHub</a>:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># title of analysis</span>
+<span class="co">#</span>
+<span class="co"># date started (yyyy-mm-dd)</span>
+<span class="co"># lead analysis developer</span>
+<span class="co">#</span>
+<span class="co"># notes re: purpose of project</span>
+
+<span class="co"># load ---------------------------</span>
+
+<span class="co"># load packages </span>
+
+<span class="co"># load raw data</span>
+
+
+<span class="co"># clean ---------------------------</span>
+
+<span class="co"># prepare data in a tidy format</span>
+
+
+<span class="co"># analyze -------------------------</span>
+
+<span class="co"># transform, model, and/or visualize data</span>
+
+<span class="co"># communicate ---------------------</span>
+
+<span class="co"># produce objects (tables, charts, etc) for communcating results</span></code></pre></div>
+<p>If all of your team starts analysis projects with this template or one that best suits your needs, it reduces the barriers ahead of each team member understanding what an analysis script is doing. You will be able to quickly isolate potential errors or identify creative apporaches to replicate in other analyses.</p>
 </div>
 <div id="style-guide" class="section level2">
 <h2><span class="header-section-number">6.2</span> Style guide</h2>
-<ul>
-<li>It’s a small point of friction, but there’s no reason to have it</li>
-<li>Come to a consensus and stick with one style</li>
-</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SsoOG6ZeyUI" frameborder="0" allowfullscreen>
+</iframe>
+<p>Code style is a constant topic of debate among software developers. Naming conventions, commenting practices, whitespace, and of course, tabs vs. spaces.</p>
+<p>There are many pre-defined style guides out there for statistical programming lagnuages. As citizens of the <code>tidyverse</code>, our team adheres to <a href="http://style.tidyverse.org">the Tidyverse R Style Guide</a>.</p>
+<p>That may be the right choice for your team or it might not. The point is that you and your teammates need to make a choce and stick to it. It will make reviewing code much, much easier.</p>
 </div>
 <div id="procedural-checklists" class="section level2">
 <h2><span class="header-section-number">6.3</span> Procedural checklists</h2>
-<ul>
-<li>Seprate from analysis templates, start to identify common procedures</li>
-<li>Create checklists</li>
-<li>If it works for airline pilots and surgons, it can work for analysis developers.</li>
-</ul>
-</div>
-<div id="code-review" class="section level2">
-<h2><span class="header-section-number">6.4</span> Code review</h2>
+<p>Apart from your analysis structure and style, your team should also define the procedure for tasks you’ll do on a routine or semi-routine schedule. Once you’ve defined these procedures, be sure to document them in a series of checklists. Several of [o]ur team’s checklists are available on GitHub](<a href="https://github.com/alspur/analysis_dev_templates/tree/master/checklists" class="uri">https://github.com/alspur/analysis_dev_templates/tree/master/checklists</a>).</p>
+<p>Why checklists? If it works for airline pilots and surgons, it can work for analysis developers. Atul Gawande’s book, <a href="https://www.amazon.com/Checklist-Manifesto-How-Things-Right/dp/0312430000">The Checklist Manifesto</a>, explains the value of checklists to highly skilled workers.</p>
+<p>Professionals of all varieties - programmers, doctors, teachers, pilots, etc. - perform cognatively demanding tasks on regular basis in high-stakes settings. They apply the skills they’ve honed through training, their understanding of their field, and their general experience to execute complex tasks. But no matter how competent or prepared these professionals are, they still make mistakes. Gawande writes:</p>
+<blockquote>
+<p>“In a complex environment, experts are up against two main difficulties. The first is the fallibility of human memory and attention, especially when it comes to mundane, routine matters that are easily overlooked under the strain of more pressing events.”</p>
+<p>…</p>
+<p>“A further difficulty, just as insidious, is that people can lull themselves into skipping steps even when they remember them. In complex processes, after all, certain steps don’t always matter. Perhaps the elevator controls on airplanes are usually unlocked and a check is pointless most of the time. Perhaps measuring all four vital signs uncovers a worrisome issue in only one out of fifty patients. “This has never been a problem before,” people say. Until one day it is.”</p>
+</blockquote>
+<p>There’s nothing wrong with confidence in your ability to practice your profession, but it does breed a degree hubris that even when seemingly benign, can lead to significant errors. Gwande provides several examples of this in the medical field, where skipping seemingly obvious steps can lead to someone having their right knee opened up even if they’re in for an ACL repair on their left knee.</p>
+<p>The concept of minimizing mistakes in routine processes is also applicable to analysis development. Each analysis project involves follows the broad format of importing, cleaning, transforming, and reporting data. If small steps along the way aren’t double-checked, a tiny error can lead to significant problems with the results.</p>
+<p>Gwande stresses that using checklists to minimize error isn’t meant to dumb down the work of professionals. Instead, he argues:</p>
+<blockquote>
+<p>“It is common to misconceive how checklists function in complex lines of work. They are not comprehensive how-to guides, whether for building a skyscraper or getting a plane out of trouble. They are quick and simple tools aimed to buttress the skills of expert professionals.”</p>
+<p>…</p>
+<p>“You want people to make sure to get the stupid stuff right. Yet you also want to leave room for craft and judgment and the ability to respond to unexpected difficulties that arise along the way”</p>
+</blockquote>
+<p>Checklists must strike an important balance. They need to cover enough critical points in a process to minimize the “stupid stuff” that could happen, but they also need the flexibility and brevity to be useful in a real-world setting. Gwande explains the difference between a good checklist and a bad one:</p>
+<blockquote>
+<p>“Bad checklists are vague and imprecise. They are too long; they are hard to use; they are impractical. They are made by desk jockeys with no awareness of the situations in which they are to be deployed. They treat the people using the tools as dumb and try to spell out every single step. They turn people’s brains off rather than turn them on.</p>
+<p>Good checklists, on the other hand, are precise. They are efficient, to the point, and easy to use even in the most difficult situations. They do not try to spell out everything—a checklist cannot fly a plane. Instead, they provide reminders of only the most critical and important steps—the ones that even the highly skilled professionals using them could miss. Good checklists are, above all, practical.”</p>
+</blockquote>
+<p>Work with your team to develop good checklists. The most valuable checklists you’ll devleop are the ones you actually end up using. Start indentifying the critical steps in your work, write them down, and iterate your checklists to help your team minimize error and ensure consistent quality.</p>
 
 </div>
 </div>

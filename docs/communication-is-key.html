@@ -25,7 +25,7 @@
 <meta name="author" content="Alex Spurrier">
 
 
-<meta name="date" content="2017-07-06">
+<meta name="date" content="2017-07-11">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -49,6 +49,43 @@
 
 
 
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
 
 </head>
 
@@ -87,11 +124,10 @@
 <li class="chapter" data-level="6.1" data-path="establish-systems.html"><a href="establish-systems.html#common-analysis-format"><i class="fa fa-check"></i><b>6.1</b> Common analysis format</a></li>
 <li class="chapter" data-level="6.2" data-path="establish-systems.html"><a href="establish-systems.html#style-guide"><i class="fa fa-check"></i><b>6.2</b> Style guide</a></li>
 <li class="chapter" data-level="6.3" data-path="establish-systems.html"><a href="establish-systems.html#procedural-checklists"><i class="fa fa-check"></i><b>6.3</b> Procedural checklists</a></li>
-<li class="chapter" data-level="6.4" data-path="establish-systems.html"><a href="establish-systems.html#code-review"><i class="fa fa-check"></i><b>6.4</b> Code review</a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="collaborate-on-analysis-development.html"><a href="collaborate-on-analysis-development.html"><i class="fa fa-check"></i><b>7</b> Collaborate on analysis development</a><ul>
 <li class="chapter" data-level="7.1" data-path="collaborate-on-analysis-development.html"><a href="collaborate-on-analysis-development.html#working-together-on-github"><i class="fa fa-check"></i><b>7.1</b> Working together on Github</a></li>
-<li class="chapter" data-level="7.2" data-path="collaborate-on-analysis-development.html"><a href="collaborate-on-analysis-development.html#code-review-1"><i class="fa fa-check"></i><b>7.2</b> Code review</a></li>
+<li class="chapter" data-level="7.2" data-path="collaborate-on-analysis-development.html"><a href="collaborate-on-analysis-development.html#code-review"><i class="fa fa-check"></i><b>7.2</b> Code review</a></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="identify-pain-points.html"><a href="identify-pain-points.html"><i class="fa fa-check"></i><b>8</b> Identify pain points</a><ul>
 <li class="chapter" data-level="8.1" data-path="identify-pain-points.html"><a href="identify-pain-points.html#figure-out-common-problems"><i class="fa fa-check"></i><b>8.1</b> Figure out common problems</a></li>
@@ -129,7 +165,7 @@
 <div id="establish-norms" class="section level2">
 <h2><span class="header-section-number">5.2</span> Establish norms</h2>
 <p>As you start to meet regularly with your team, you will also want to take the time to establish and model healthy norms to support open and honest communication. Sharing your work can be a nerve-racking proposition, exponentially so if you’re trying a new approach or learning a new software language. Setting expectations on the front-end of those conversations will reduce that tension and lead to more productive feedback.</p>
-<p>To start, make it clear that any feedback on an analysis project is strictly about the <em>approach</em> and not about <em>the person</em>. Hilary Parker covers this topic in a talk she gave at the 2017 rstudio::conf(), <a href="https://www.rstudio.com/resources/videos/opinionated-analysis-development/">Opinionated Analysis Development</a>. She discusses the “blameless postmortem” process used during her time at Etsy, in which any errors were discussed by evaluating the <em>process</em> that led to the error, not the person responsible. Mistakes will happen in our work - an approach to resolving them that focuses on improving process over assigning blame to a person will ultimately lead to more productive and less emotional conversations.</p>
+<p>To start, make it clear that any feedback on an analysis project is strictly about the <em>process</em> and not about <em>the person</em>. Hilary Parker covers this topic in a talk she gave at the 2017 rstudio::conf(), <a href="https://www.rstudio.com/resources/videos/opinionated-analysis-development/">Opinionated Analysis Development</a>. She discusses the “blameless postmortem” process used during her time at Etsy, in which any errors were discussed by evaluating the <em>process</em> that led to the error, not the person responsible. Mistakes will happen in our work - an approach to resolving them that focuses on improving process over assigning blame to a person will ultimately lead to more productive and less emotional conversations.</p>
 <p>These conversations about the process of data analysis should be grounded in a sense of humility. While some may be more comfortable and confident in their expertise, nobody has the perfect answer to every problem. As we become experts, it’s important to remember how it felt to be a novice. Any feedback we provide to others should always be done in a spirit that recognizes we tackle difficult problems and are all learning to get better with each analysis we craft.</p>
 <p>It is also important that while we provide feedback on processes with a sense of humility, it must also be delivered as honestly as possible. Pointing out errors in a particular analytic approach or offer more optimal workflow is good - that’s how we learn and grow. But we must always take caution to make sure that this honest feedback is always focused on the <em>process</em> and not the <em>person</em>.</p>
 
