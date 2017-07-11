@@ -1,8 +1,12 @@
 # Establish systems
 
+Once your team establishes a strong communication system, it's time to start building systems that will support effective collaboration. Meeting regularly and establishing norms set the foundation for you to have an open and constructive dialogue about apporaches and processes that can give your team more constistency and standarization in the development of analysis products.
 
+This isn't to say that you should strive to have every analysis developer's work look *identical* - if that were the case, you could simply write a script to automate it. Moving your team towards *more* and not *total* consistency and standardization means that when yoy have opportunities to provide feedback on work, the barriers to understanding are minimized. Seemingly minor roadblocks to understanding what a script is doing, like its organization or how variables are named, each serve as a cognative tax. Establishing good systems will help you limit the level of cognative taxation required to read a teammates's code, leaving more capacity to engage in the work of analysis development.
 
 ## Common analysis format
+
+
 
 - Identify optimal workflows
 - Create common analysis structure
