@@ -3,7 +3,7 @@
 ## Your primary collaborator
 
 No man is an island, and analysis developers are no different. 
-Even if you are working as the lone analysis developer in your agency, it doesn't mean you can neglect the structures a team needs to be successful. As Hadley Wickham notes in his {Expressing yourself with R](https://youtu.be/1POb5fx_m3I?t=34m12s) talk:
+Even if you are working as the lone analysis developer in your agency, it doesn't mean you can neglect the structures a team needs to be successful. As Hadley Wickham notes in his [Expressing yourself with R](https://youtu.be/1POb5fx_m3I?t=34m12s) talk:
 
 >"Every project you work on is fundamentally collaborative. Even if you're not working with any other person, you are always working with *future you*. And you really don't want to be in a situation where future you has no idea what past you was thinking, because past you will not respond to any emails."
 
