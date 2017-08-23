@@ -1,8 +1,8 @@
 # Establish systems
 
-Once your team establishes a strong communication system, it's time to start building systems that will support effective collaboration. Meeting regularly and establishing norms set the foundation for you to have an open and constructive dialogue about apporaches and processes that can give your team more constistency and standarization in the development of analysis products.
+Once your team establishes a strong communication system, it's time to start building systems that will support effective collaboration. Meeting regularly and establishing norms set the foundation for you to have an open and constructive dialogue about approaches and processes that can give your team more consistency and standardization in the development of analysis products.
 
-This isn't to say that you should strive to have every analysis developer's work look *identical* - if that were the case, you could simply write a script to automate it. Moving your team towards *more* and not *total* consistency and standardization means that when yoy have opportunities to provide feedback on work, the barriers to understanding are minimized. Seemingly minor roadblocks to understanding what a script is doing, like its organization or how variables are named, each serve as a cognative tax. Establishing good systems will help you limit the level of cognative taxation required to read a teammates's code, leaving more capacity to engage in the work of analysis development.
+This isn't to say that you should strive to have every analysis developer's work look *identical* - if that were the case, you could simply write a script to automate it. Moving your team towards *more* and not *total* consistency and standardization means that when you have opportunities to provide feedback on work, the barriers to understanding are minimized. Seemingly minor roadblocks to understanding what a script is doing, like its organization or how variables are named, each serve as a cognitive tax. Establishing good systems will help you limit the level of cognitive taxation required to read a teammate's code, leaving more capacity to engage in the work of analysis development.
 
 ## Common analysis format
 
@@ -46,25 +46,25 @@ Here is the exact code we use in our template analysis script, which is [availab
 
 ```
 
-If all of your team starts analysis projects with this template or one that best suits your needs, it reduces the barriers ahead of each team member understanding what an analysis script is doing. You will be able to quickly isolate potential errors or identify creative apporaches to replicate in other analyses. 
+If all of your team starts analysis projects with this template or one that best suits your needs, it reduces the barriers ahead of each team member understanding what an analysis script is doing. You will be able to quickly isolate potential errors or identify creative approaches to replicate in other analyses. 
 
 ## Style guide
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SsoOG6ZeyUI" frameborder="0" allowfullscreen></iframe>
 
-Code style is a constant topic of debate among software developers. Naming conventions, commenting practices, whitespace, and of course, tabs vs. spaces.
+Code style is a constant topic of debate among software developers. Naming conventions, commenting practices, white space, and of course, tabs vs. spaces.
 
-There are many pre-defined style guides out there for statistical programming lagnuages. As citizens of the `tidyverse`, our team adheres to [the Tidyverse R Style Guide](http://style.tidyverse.org). 
+There are many pre-defined style guides out there for statistical programming languages. As citizens of the `tidyverse`, our team adheres to [the Tidyverse R Style Guide](http://style.tidyverse.org). 
 
-That may be the right choice for your team or it might not. The point is that you and your teammates need to make a choce and stick to it. It will make reviewing code much, much easier. 
+That may be the right choice for your team or it might not. The point is that you and your teammates need to make a choice and stick to it. It will make reviewing code much, much easier. 
 
 ## Procedural checklists
 
 Apart from your analysis structure and style, your team should also define the procedure for tasks you'll do on a routine or semi-routine schedule. Once you've defined these procedures, be sure to document them in a series of checklists. Several of [o]ur team's checklists are available on GitHub](https://github.com/alspur/analysis_dev_templates/tree/master/checklists).
 
-Why checklists? If it works for airline pilots and surgons, it can work for analysis developers. Atul Gawande's book, [The Checklist Manifesto](https://www.amazon.com/Checklist-Manifesto-How-Things-Right/dp/0312430000), explains the value of checklists to highly skilled workers.
+Why checklists? If it works for airline pilots and surgeons, it can work for analysis developers. Atul Gawande's book, [The Checklist Manifesto](https://www.amazon.com/Checklist-Manifesto-How-Things-Right/dp/0312430000), explains the value of checklists to highly skilled workers.
 
-Professionals of all varieties - programmers, doctors, teachers, pilots, etc. - perform cognatively demanding tasks on regular basis in high-stakes settings. They apply the skills they've honed through training, their understanding of their field, and their general experience to execute complex tasks. But no matter how competent or prepared these professionals are, they still make mistakes. Gawande writes:
+Professionals of all varieties - programmers, doctors, teachers, pilots, etc. - perform cognitively demanding tasks on regular basis in high-stakes settings. They apply the skills they've honed through training, their understanding of their field, and their general experience to execute complex tasks. But no matter how competent or prepared these professionals are, they still make mistakes. Gawande writes:
 
 > “In a complex environment, experts are up against two main difficulties. The first is the fallibility of human memory and attention, especially when it comes to mundane, routine matters that are easily overlooked under the strain of more pressing events.”
 >
@@ -90,4 +90,4 @@ Checklists must strike an important balance. They need to cover enough critical 
 >
 > Good checklists, on the other hand, are precise. They are efficient, to the point, and easy to use even in the most difficult situations. They do not try to spell out everything—a checklist cannot fly a plane. Instead, they provide reminders of only the most critical and important steps—the ones that even the highly skilled professionals using them could miss. Good checklists are, above all, practical.”
 
-Work with your team to develop good checklists. The most valuable checklists you'll devleop are the ones you actually end up using. Start indentifying the critical steps in your work, write them down, and iterate your checklists to help your team minimize error and ensure consistent quality.
+Work with your team to develop good checklists. The most valuable checklists you'll develop are the ones you actually end up using. Start identifying the critical steps in your work, write them down, and iterate your checklists to help your team minimize error and ensure consistent quality.

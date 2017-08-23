@@ -6,9 +6,9 @@ There are two software tools every analyst should utilize: a script-based data a
 
 ## Data analysis software
 
-The most commonly used data analysis software is Microsoft Excel. While nearly every analyst cuts their teeth crafting spreadsheets and pivot tables in this popular software, it's not an ideal platform for professional analysis developers. Excel's cell-based structure obscures the formulae that drive analysis work, making it hard for others (and often yourself) to understand what's actually going on "under the hood."
+The most commonly used data analysis software is Microsoft Excel. While nearly every analyst cuts their teeth crafting spreadsheets and pivot tables in this popular software, it's not an ideal platform for professional analysis developers. Excel's cell-based structure obscures the formulas that drive analysis work, making it hard for others (and often yourself) to understand what's actually going on "under the hood."
 
-Scripting-based data analysis languages are the cure for the common spreadsheet. They make the entire analysis process transparent by explicitly stating what actions will happen and the order in which they will be executed. This helps to not only clarify your own analytical approach, it also makes it much easier to catch bugs in your analyses.
+Scripting-based data analysis languages are the cure for the common spreadsheet. They make the entire analysis process transparent by explicitly stating what actions will happen and the order in which they will be executed. This helps to not only clarify your own analytic approach, it also makes it much easier to catch bugs in your analyses.
 
 ### The case for R
 
