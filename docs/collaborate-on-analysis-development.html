@@ -126,15 +126,17 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="6.3" data-path="establish-systems.html"><a href="establish-systems.html#procedural-checklists"><i class="fa fa-check"></i><b>6.3</b> Procedural checklists</a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="collaborate-on-analysis-development.html"><a href="collaborate-on-analysis-development.html"><i class="fa fa-check"></i><b>7</b> Collaborate on analysis development</a><ul>
-<li class="chapter" data-level="7.1" data-path="collaborate-on-analysis-development.html"><a href="collaborate-on-analysis-development.html#working-together-on-github"><i class="fa fa-check"></i><b>7.1</b> Working together on Github</a></li>
-<li class="chapter" data-level="7.2" data-path="collaborate-on-analysis-development.html"><a href="collaborate-on-analysis-development.html#code-review"><i class="fa fa-check"></i><b>7.2</b> Code review</a></li>
+<li class="chapter" data-level="7.1" data-path="collaborate-on-analysis-development.html"><a href="collaborate-on-analysis-development.html#code-reviews"><i class="fa fa-check"></i><b>7.1</b> Code reviews</a></li>
+<li class="chapter" data-level="7.2" data-path="collaborate-on-analysis-development.html"><a href="collaborate-on-analysis-development.html#working-together-on-github"><i class="fa fa-check"></i><b>7.2</b> Working together on Github</a></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="identify-pain-points.html"><a href="identify-pain-points.html"><i class="fa fa-check"></i><b>8</b> Identify pain points</a><ul>
-<li class="chapter" data-level="8.1" data-path="identify-pain-points.html"><a href="identify-pain-points.html#figure-out-common-problems"><i class="fa fa-check"></i><b>8.1</b> Figure out common problems</a></li>
-<li class="chapter" data-level="8.2" data-path="identify-pain-points.html"><a href="identify-pain-points.html#has-anyone-already-solved-this-problem"><i class="fa fa-check"></i><b>8.2</b> Has anyone already solved this problem?</a></li>
-<li class="chapter" data-level="8.3" data-path="identify-pain-points.html"><a href="identify-pain-points.html#develop-internal-solutions"><i class="fa fa-check"></i><b>8.3</b> Develop internal solutions</a></li>
+<li class="chapter" data-level="8.1" data-path="identify-pain-points.html"><a href="identify-pain-points.html#has-anyone-already-solved-this-problem"><i class="fa fa-check"></i><b>8.1</b> Has anyone already solved this problem?</a></li>
+<li class="chapter" data-level="8.2" data-path="identify-pain-points.html"><a href="identify-pain-points.html#develop-internal-solutions"><i class="fa fa-check"></i><b>8.2</b> Develop internal solutions</a></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="share-beyond-your-walls.html"><a href="share-beyond-your-walls.html"><i class="fa fa-check"></i><b>9</b> Share beyond your walls</a></li>
+<li class="chapter" data-level="9" data-path="share-beyond-your-walls.html"><a href="share-beyond-your-walls.html"><i class="fa fa-check"></i><b>9</b> Share beyond your walls</a><ul>
+<li class="chapter" data-level="9.1" data-path="share-beyond-your-walls.html"><a href="share-beyond-your-walls.html#internal-sharing"><i class="fa fa-check"></i><b>9.1</b> Internal sharing</a></li>
+<li class="chapter" data-level="9.2" data-path="share-beyond-your-walls.html"><a href="share-beyond-your-walls.html#external-sharing"><i class="fa fa-check"></i><b>9.2</b> External sharing</a></li>
+</ul></li>
 <li class="chapter" data-level="10" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>10</b> Conclusion</a></li>
 </ul>
 
@@ -155,11 +157,21 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
             <section class="normal" id="section-">
 <div id="collaborate-on-analysis-development" class="section level1">
 <h1><span class="header-section-number">Chapter 7</span> Collaborate on analysis development</h1>
-<div id="working-together-on-github" class="section level2">
-<h2><span class="header-section-number">7.1</span> Working together on Github</h2>
+<p>Once your team has started meeting regularly, established norms, and built some common analysis templates and/or style guides, you’ll be ready to take the next step in collaboration: actually working on code as a team. This is <em>much</em> easier if you are all working in the same programming language (or languages).</p>
+<div id="code-reviews" class="section level2">
+<h2><span class="header-section-number">7.1</span> Code reviews</h2>
+<p>The first level of coding collaboration your team should try is a <em>code review</em> - a process by which one developer shares their code with other developers to get constructive feedback. In the software development world, code reviews help teams minimize bugs and critical vulnerabilities. Analysis developers can realize similar benefits by conducing code reviews with their teams.</p>
+<p>Every project will have buggy code at some point. Many times, the lead developer will be able to catch those bugs as they are coding their analysis, but sometimes an error will slip through their personal review process. If you’re staring at the same lines of code for days, you may miss something that could be obvious to someone looking at the same code with fresh eyes. Code reviews are incredibly helpful to spot and correct those kinds of mistakes.</p>
+<p>A code review is also a helpful process to help an analysis developer check their work for methodological blind spots. Walking through your code with your teammates can help ensure you’re all on the same page with the particular choices you’ve made regarding cleaning, transforming, modeling, and visualizing your data. If there are differing opinions on particular choices, a code review is a great forum to resolve those differences.</p>
+<p>All of this sounds great - just share your code with your teammates and you’ll squash bugs and resolve any methodological vulnerabilities - but it can also go very poorly if you haven’t established a strong level of trust and open communication on your team. Sharing your code for the first time is a nerve-racking experience. Make sure that when your team tries a code review for the first time, you set some explicit norms for that conversation:</p>
+<ul>
+<li>Decide at the beginning of the conversation how the presenter would like to take questions and comments. Wait until the end? Jump in anytime? Since it’s their code, let the presenter decide what’s more comfortable for them.</li>
+<li>If you’re giving feedback, remember to focus your comments and questions on the <em>process</em> and not the person. If you spot an error, don’t lead with saying “You forgot to include variable x in your <code>group_by()</code> call on line 53.” Instead, explain the issue you’re seeing and why you might suggest a different approach. This approach will help all of your teammates to understand the issue and the recommended solution, turning a moment of potential embarrassment into a learning opportunity for the whole team.</li>
+</ul>
+<p>Code reviews, when done well, can be a great way to improve code quality and further develop your team’s coding skills. Just make sure you’ve done enough to build your team culture <em>first</em> - this will help ensure that it’s a positive and productive experience.</p>
 </div>
-<div id="code-review" class="section level2">
-<h2><span class="header-section-number">7.2</span> Code review</h2>
+<div id="working-together-on-github" class="section level2">
+<h2><span class="header-section-number">7.2</span> Working together on Github</h2>
 
 </div>
 </div>

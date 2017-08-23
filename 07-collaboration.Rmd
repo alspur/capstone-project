@@ -1,5 +1,22 @@
 # Collaborate on analysis development
 
+Once your team has started meeting regularly, established norms, and built some common analysis templates and/or style guides, you'll be ready to take the next step in collaboration: actually working on code as a team. This is *much* easier if you are all working in the same programming language (or languages). 
+
+## Code reviews
+
+The first level of coding collaboration your team should try is a *code review* - a process by which one developer shares their code with other developers to get constructive feedback. In the software development world, code reviews help teams minimize bugs and critical vulnerabilities. Analysis developers can realize similar benefits by conducing code reviews with their teams. 
+
+Every project will have buggy code at some point. Many times, the lead developer will be able to catch those bugs as they are coding their analysis, but sometimes an error will slip through their personal review process. If you're staring at the same lines of code for days, you may miss something that could be obvious to someone looking at the same code with fresh eyes. Code reviews are incredibly helpful to spot and correct those kinds of mistakes. 
+
+A code review is also a helpful process to help an analysis developer check their work for methodological blind spots. Walking through your code with your teammates can help ensure you're all on the same page with the particular choices you've made regarding cleaning, transforming, modeling, and visualizing your data. If there are differing opinions on particular choices, a code review is a great forum to resolve those differences.
+
+All of this sounds great - just share your code with your teammates and you'll squash bugs and resolve any methodological vulnerabilities - but it can also go very poorly if you haven't established a strong level of trust and open communication on your team. Sharing your code for the first time is a nerve-racking experience. Make sure that when your team tries a code review for the first time, you set some explicit norms for that conversation:
+
+- Decide at the beginning of the conversation how the presenter would like to take questions and comments. Wait until the end? Jump in anytime? Since it's their code, let the presenter decide what's more comfortable for them.
+- If you're giving feedback, remember to focus your comments and questions on the *process* and not the person. If you spot an error, don't lead with saying "You forgot to include variable x in your `group_by()` call on line 53." Instead, explain the issue you're seeing and why you might suggest a different approach. This approach will help all of your teammates to understand the issue and the recommended solution, turning a moment of potential embarrassment into a learning opportunity for the whole team.
+
+Code reviews, when done well, can be a great way to improve code quality and further develop your team's coding skills. Just make sure you've done enough to build your team culture *first* - this will help ensure that it's a positive and productive experience.
+
 ## Working together on Github
 
-## Code review
+

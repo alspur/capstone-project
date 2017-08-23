@@ -1,7 +1,13 @@
 # Identify pain points
 
-## Figure out common problems
+As your team works, you'll identify common roadblocks in your analysis projects. Figure out what those problems are, then build tools to minimize or eliminate those problems.
 
 ## Has anyone already solved this problem?
 
+Stack Overflow and Google can solve many of your problems - start there!
+
 ## Develop internal solutions
+
+Create functions that your team can use. Look at Advanced R book for more on funcitonal programming. 
+
+Bundle common tools and/or data into an R package. Look at R packages book for more info.
