@@ -25,7 +25,7 @@
 <meta name="author" content="Alex Spurrier">
 
 
-<meta name="date" content="2017-08-23">
+<meta name="date" content="2017-08-30">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -127,11 +127,12 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </ul></li>
 <li class="chapter" data-level="7" data-path="collaborate-on-analysis-development.html"><a href="collaborate-on-analysis-development.html"><i class="fa fa-check"></i><b>7</b> Collaborate on analysis development</a><ul>
 <li class="chapter" data-level="7.1" data-path="collaborate-on-analysis-development.html"><a href="collaborate-on-analysis-development.html#code-reviews"><i class="fa fa-check"></i><b>7.1</b> Code reviews</a></li>
-<li class="chapter" data-level="7.2" data-path="collaborate-on-analysis-development.html"><a href="collaborate-on-analysis-development.html#working-together-on-github"><i class="fa fa-check"></i><b>7.2</b> Working together on Github</a></li>
+<li class="chapter" data-level="7.2" data-path="collaborate-on-analysis-development.html"><a href="collaborate-on-analysis-development.html#collaborative-coding"><i class="fa fa-check"></i><b>7.2</b> Collaborative Coding</a></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="identify-pain-points.html"><a href="identify-pain-points.html"><i class="fa fa-check"></i><b>8</b> Identify pain points</a><ul>
 <li class="chapter" data-level="8.1" data-path="identify-pain-points.html"><a href="identify-pain-points.html#has-anyone-already-solved-this-problem"><i class="fa fa-check"></i><b>8.1</b> Has anyone already solved this problem?</a></li>
 <li class="chapter" data-level="8.2" data-path="identify-pain-points.html"><a href="identify-pain-points.html#develop-internal-solutions"><i class="fa fa-check"></i><b>8.2</b> Develop internal solutions</a></li>
+<li class="chapter" data-level="8.3" data-path="identify-pain-points.html"><a href="identify-pain-points.html#case-study-kentuckys-school-report-card-data"><i class="fa fa-check"></i><b>8.3</b> Case study: Kentucky’s School Report Card data</a></li>
 </ul></li>
 <li class="chapter" data-level="9" data-path="share-beyond-your-walls.html"><a href="share-beyond-your-walls.html"><i class="fa fa-check"></i><b>9</b> Share beyond your walls</a><ul>
 <li class="chapter" data-level="9.1" data-path="share-beyond-your-walls.html"><a href="share-beyond-your-walls.html#internal-sharing"><i class="fa fa-check"></i><b>9.1</b> Internal sharing</a></li>
@@ -157,15 +158,25 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
             <section class="normal" id="section-">
 <div id="identify-pain-points" class="section level1">
 <h1><span class="header-section-number">Chapter 8</span> Identify pain points</h1>
-<p>As your team works, you’ll identify common roadblocks in your analysis projects. Figure out what those problems are, then build tools to minimize or eliminate those problems.</p>
+<p>As your team works, you will inevitably run into roadblocks when executing analysis projects. You may even notice that some of these obstacles are recurring problems. While it may seem like an inconvenience, your team can actually turn these pain points into an opportunity for improvement.</p>
+<p>In the book <a href="http://r4ds.had.co.nz/functions.html">R for Data Science</a>, Hadley Wickham recommends that if you’ve done a copy-and-paste of the same code more than two times, you should write a function to simplify that action. Taken a step further, we should also recognize that if we’re repeating lines of code or functions in multiple projects, those actions ought to be converted into a more reusable set of code for your team.</p>
+<p>These common tools could be as simple as a script to help format ggplot2 graphics or it could be as complex as a full-blown R package. No matter the form, applying common code that can address your team’s pain points will help improve your team’s programming skill as well as improve the efficiency of your team’s workflow.</p>
 <div id="has-anyone-already-solved-this-problem" class="section level2">
 <h2><span class="header-section-number">8.1</span> Has anyone already solved this problem?</h2>
-<p>Stack Overflow and Google can solve many of your problems - start there!</p>
+<p>Once your team has identified a common pain point in your analysis development workflow, the first step you should take it to determine if anyone has a ready-to use solution. From new users to master developers, every level of programmer at some point will turn to a search engine to answer a programming question. Taking a few minutes to search a programming question on Google or <a href="https://www.stackoverflow.com">Stack Overflow</a> is often one of the best uses of an analysis developer’s time - five minutes finding an answer to a question is vastly preferred to spending an hour or three trying to figure it out the answer in isolation.</p>
 </div>
 <div id="develop-internal-solutions" class="section level2">
 <h2><span class="header-section-number">8.2</span> Develop internal solutions</h2>
-<p>Create functions that your team can use. Look at Advanced R book for more on funcitonal programming.</p>
-<p>Bundle common tools and/or data into an R package. Look at R packages book for more info.</p>
+<p>Sometimes, your team won’t be able to find a ready-made solution to the pain points you encounter. It’s at this point that your team can start exploring functional programming or package development as a way to improve your workflow.</p>
+<p>Developing a custom solution to a pain point should start with creating a function to solve the problem. If the problem is more complex, it might require writing several functions. How to approach this is beyond the scope of this book, but <a href="http://r4ds.hadley.nz">R for Data Science</a> and <a href="http://adv-r.hadley.nz">Advanced R Programming</a> are great resources to help you build functions to address your team’s pain points.</p>
+<p>If the pain points your team encounters are common across multiple projects and you work in R, you may want to consider developing an R package for your team. A package is a way to share R code, data, and documentation with other R users. If your team needs to format plots according to your organization’s style guide, your R package could include a function that applies the proper theme and color palette to your ggplot2 graphics. If you frequently perform a certain cleaning operation on your data, the package could include those functions. To get started building your own R packages, Hadley Wickham’s <a href="http://r-pkgs.hadley.nz">R Packages book</a> is the best place to start.</p>
+</div>
+<div id="case-study-kentuckys-school-report-card-data" class="section level2">
+<h2><span class="header-section-number">8.3</span> Case study: Kentucky’s School Report Card data</h2>
+<p>Working at the Kentucky Department of Education (KDE), many of the small analysis projects I worked on with my team were focused on a question that could be answered by looking at data from Kentucky’s School Report Card (SRC) website. The SRC includes demographic, academic, financial, and staffing data for every public school in the Commonwealth, so it typically the starting point for most questions about students, schools, or districts.</p>
+<p>While the SRC has a great deal of useful information, it isn’t accessible in a format that is friendly to data analysis. Different categories of data are housed in different Excel files, and even within one category, data from different school years are split into one Excel file per year. This means that for any comparison of school performance across multiple years, an analyst must download multiple Excel files, then clean and join them. If an analyst wants to include demographic data along with school performance data, the number of Excel files to download, clean, and join doubles.</p>
+<p>During my first year working at KDE, I went through the routine of downloading, cleaning, and joining SRC Excel files dozens of times. I eventually realized that I could save hours per week by taking the SRC data I used most frequently, cleaning it, and storing it in an R package. After a few weeks of working through Hadley Wickham’s <a href="https://r-pkgs.had.co.nz">R Packages book</a>, <a href="https://www.github.com/alspur/kysrc"><code>kysrc</code></a> was born.</p>
+<p>Over the course of a year, I continued to improve the <code>kysrc</code> package, adding new data sets and vignettes to make it even more useful. As my team of analysts grew from one to three, I helped our new hires save hours that would have been spent cleaning data. The barriers to analyzing SRC data are now lower and as a result, our team is vastly more efficient.</p>
 
 </div>
 </div>

@@ -1,13 +1,30 @@
 # Identify pain points
 
-As your team works, you'll identify common roadblocks in your analysis projects. Figure out what those problems are, then build tools to minimize or eliminate those problems.
+As your team works, you will inevitably run into roadblocks when executing analysis projects. You may even notice that some of these obstacles are recurring problems. While it may seem like an inconvenience, your team can actually turn these pain points into an opportunity for improvement.
+
+In the book [R for Data Science](http://r4ds.had.co.nz/functions.html), Hadley Wickham recommends that if you've done a copy-and-paste of the same code more than two times, you should write a function to simplify that action. Taken a step further, we should also recognize that if we're repeating lines of code or functions in multiple projects, those actions ought to be converted into a more reusable set of code for your team. 
+
+These common tools could be as simple as a script to help format ggplot2 graphics or it could be as complex as a full-blown R package. No matter the form, applying common code that can address your team's pain points will help improve your team's programming skill as well as improve the efficiency of your team's workflow.
 
 ## Has anyone already solved this problem?
 
-Stack Overflow and Google can solve many of your problems - start there!
+Once your team has identified a common pain point in your analysis development workflow, the first step you should take it to determine if anyone has a ready-to use solution. From new users to master developers, every level of programmer at some point will turn to a search engine to answer a programming question. Taking a few minutes to search a programming question on Google or [Stack Overflow](https://www.stackoverflow.com) is often one of the best uses of an analysis developer's time - five minutes finding an answer to a question is vastly preferred to spending an hour or three trying to figure it out the answer in isolation.  
 
 ## Develop internal solutions
 
-Create functions that your team can use. Look at Advanced R book for more on funcitonal programming. 
 
-Bundle common tools and/or data into an R package. Look at R packages book for more info.
+Sometimes, your team won't be able to find a ready-made solution to the pain points you encounter. It's at this point that your team can start exploring functional programming or package development as a way to improve your workflow. 
+
+Developing a custom solution to a pain point should start with creating a function to solve the problem. If the problem is more complex, it might require writing several functions. How to approach this is beyond the scope of this book, but [R for Data Science](http://r4ds.hadley.nz) and [Advanced R Programming](http://adv-r.hadley.nz) are great resources to help you build functions to address your team's pain points. 
+
+If the pain points your team encounters are common across multiple projects and you work in R, you may want to consider developing an R package for your team. A package is a way to share R code, data, and documentation with other R users. If your team needs to format plots according to your organization's style guide, your R package could include a function that applies the proper theme and color palette to your ggplot2 graphics. If you frequently perform a certain cleaning operation on your data, the package could include those functions. To get started building your own R packages, Hadley Wickham's [R Packages book](http://r-pkgs.hadley.nz) is the best place to start.
+
+## Case study: Kentucky's School Report Card data
+
+Working at the Kentucky Department of Education (KDE), many of the small analysis projects I worked on with my team were focused on a question that could be answered by looking at data from Kentucky's School Report Card (SRC) website. The SRC includes demographic, academic, financial, and staffing data for every public school in the Commonwealth, so it typically the starting point for most questions about students, schools, or districts.
+
+While the SRC has a great deal of useful information, it isn't accessible in a format that is friendly to data analysis. Different categories of data are housed in different Excel files, and even within one category, data from different school years are split into one Excel file per year. This means that for any comparison of school performance across multiple years, an analyst must download multiple Excel files, then clean and join them. If an analyst wants to include demographic data along with school performance data, the number of Excel files to download, clean, and join doubles. 
+
+During my first year working at KDE, I went through the routine of downloading, cleaning, and joining SRC Excel files dozens of times. I eventually realized that I could save hours per week by taking the SRC data I used most frequently, cleaning it, and storing it in an R package. After a few weeks of working through Hadley Wickham's [R Packages book](https://r-pkgs.had.co.nz), [`kysrc`](https://www.github.com/alspur/kysrc) was born. 
+
+Over the course of a year, I continued to improve the `kysrc` package, adding new data sets and vignettes to make it even more useful. As my team of analysts grew from one to three, I helped our new hires save hours that would have been spent cleaning data. The barriers to analyzing SRC data are now lower and as a result, our team is vastly more efficient. 
