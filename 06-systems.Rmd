@@ -1,8 +1,8 @@
 # Establish systems
 
-Once your team establishes a strong communication system, it's time to start building systems that will support effective collaboration. Meeting regularly and establishing norms set the foundation for you to have an open and constructive dialogue about approaches and processes that can give your team more consistency and standardization in the development of analysis products.
+Strong communication is just the first step to building an effective team of analysis developer - it also requires building systems that will support effective collaboration. Meeting regularly and establishing norms will set the foundation for your team to have an open and constructive dialogue about processes that can give your team more consistency and standardization in the development of analysis products.
 
-This isn't to say that you should strive to have every analysis developer's work look *identical* - if that were the case, you could simply write a script to automate it. Moving your team towards *more* and not *total* consistency and standardization means that when you have opportunities to provide feedback on work, the barriers to understanding are minimized. Seemingly minor roadblocks to understanding what a script is doing, like its organization or how variables are named, each serve as a cognitive tax. Establishing good systems will help you limit the level of cognitive taxation required to read a teammate's code, leaving more capacity to engage in the work of analysis development.
+This isn't to say that you should strive to have every analysis developer's work look *identical* - if that were the case, you could simply write a script to automate it. Moving your team towards *more* consistency and standardization means that when you have opportunities to provide feedback on work, the barriers to understanding are minimized. Seemingly minor roadblocks to understanding what a script is doing, like its organization or how variables are named, each serve as a cognitive tax. Establishing good systems will help you limit the level of cognitive taxation required to read a teammate's code, leaving more capacity to engage in the work of analysis development.
 
 ## Common analysis format
 
@@ -60,7 +60,7 @@ That may be the right choice for your team or it might not. The point is that yo
 
 ## Procedural checklists
 
-Apart from your analysis structure and style, your team should also define the procedure for tasks you'll do on a routine or semi-routine schedule. Once you've defined these procedures, be sure to document them in a series of checklists. Several of [o]ur team's checklists are available on GitHub](https://github.com/alspur/analysis_dev_templates/tree/master/checklists).
+Apart from your analysis structure and style, your team should also define the procedure for tasks you'll do on a routine or semi-routine schedule. Once you've defined these procedures, be sure to document them in a series of checklists. Several of [our team's checklists are available on GitHub](https://github.com/alspur/analysis_dev_templates/tree/master/checklists).
 
 Why checklists? If it works for airline pilots and surgeons, it can work for analysis developers. Atul Gawande's book, [The Checklist Manifesto](https://www.amazon.com/Checklist-Manifesto-How-Things-Right/dp/0312430000), explains the value of checklists to highly skilled workers.
 
@@ -72,7 +72,7 @@ Professionals of all varieties - programmers, doctors, teachers, pilots, etc. - 
 >
 > “A further difficulty, just as insidious, is that people can lull themselves into skipping steps even when they remember them. In complex processes, after all, certain steps don’t always matter. Perhaps the elevator controls on airplanes are usually unlocked and a check is pointless most of the time. Perhaps measuring all four vital signs uncovers a worrisome issue in only one out of fifty patients. “This has never been a problem before,” people say. Until one day it is.”
 
-There's nothing wrong with confidence in your ability to practice your profession, but it does breed a degree hubris that even when seemingly benign, can lead to significant errors. Gwande provides several examples of this in the medical field, where skipping seemingly obvious steps can lead to someone having their right knee opened up even if they're in for an ACL repair on their left knee. 
+There's nothing wrong with confidence in your ability to practice your profession, but it can breed a degree hubris that even when seemingly benign, can lead to significant errors. Gwande provides several examples of this in the medical field, where skipping seemingly obvious steps can lead to someone having their right knee opened up even if they're in for an ACL repair on their left knee. 
 
 The concept of minimizing mistakes in routine processes is also applicable to  analysis development. Each analysis project involves follows the broad format of importing, cleaning, transforming, and reporting data. If small steps along the way aren't double-checked, a tiny error can lead to significant problems with the results. 
 

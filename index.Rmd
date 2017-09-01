@@ -14,10 +14,8 @@ twitter-handle: alspur
 
 This book is part of my Capstone Project for the [Strategic Data Project Fellowship](https://sdp.cepr.harvard.edu/fellowship), which is part of the [Center for Education Policy Research at the Harvard Graduate School of Education](https://cepr.harvard.edu).
 
-Right now, too many data analysts, particuarly those working in education agencies, work in isolation from other analysts in their organziations. I believe that these analysts can dramatically improve their productivity, quality, and capacity by adopting collaborative practices from the software development world. 
+Right now, too many data analysts work in isolation from other analysts in their organizations. This is especially true in education agencies, where staff tend to be organized into divisions, which tends to create more barriers to collaboration with employees that share a similar job function. I believe that by adopting collaborative practices from the software development world, these analysts can dramatically improve their productivity, quality, and capacity. 
 
-I've worked to get my team of analysts at the Kentucky Department of Education embrace the idea of "collaborative analysis development." After we adopted some collaborative practices from the software development world, we greatly improved the speed, quality, and volume of our analytic work. 
-
-This book is intended to help other analysts, particuarly those in education, to collaborate more in order to deliver more and better analysis to help organizations better serve students.
+I've worked to get my team of analysts at the Kentucky Department of Education embrace the idea of "collaborative analysis development." After we adopted some collaborative practices from the software development world, we greatly improved the speed, quality, and volume of our analytic work. This book is intended to help other analysts, particularly those working in education, to collaborate more in order to deliver better analysis to help their organizations better serve students.
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.

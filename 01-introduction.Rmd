@@ -2,9 +2,9 @@
 
 ## What this book covers
 
-Staff at many schools, districts, and state departments of education can feel like they are adrift in a sea of data. Highly skilled personnel are needed to help them navigate this information properly and chart the best possible course forward for the students they serve. More often than not, this effort will require the capacity of several analysts. 
+Staff at schools, districts, and state departments of education can feel like they are adrift in a sea of data. Highly skilled personnel are needed to help them navigate this information properly and chart the best possible course forward for the students they serve. More often than not, this effort will require the services of several data analysts. 
 
-Many education agencies have responded to this need by hiring multiple analysts, but they are often put to work in specific program areas and operate in isolation. This may help solve short-term data needs, but it is an under-utilization of personnel that share a valuable skill set. **Data analysts, particuarly those working in education agencies, can dramatically improve their productivity, quality, and capacity by adopting collaborative practices from the software development world.**
+Many education agencies have responded to this need by hiring multiple analysts, but they are often put to work in specific program areas and operate in isolation from one another. This may help solve short-term data needs, but it is an under-utilization of personnel that share a valuable skill set. **Data analysts, particuarly those working in education agencies, can dramatically improve their productivity, quality, and capacity by adopting collaborative practices from the software development world.**
 
 ## Book organization
 
@@ -18,7 +18,7 @@ This book starts with an argument for collaborative data analysis in education a
 
 ## Acknowledgements
 
-I wrote this book as part of my Capstone Project for the Strategic Data Project Fellowshop. It represents the culmination of two years of conferences, Google Hangouts, workshops, and gallons and gallons of coffee. Many people helped me along the way to make this project a success, including:
+I wrote this book as part of my Capstone Project for the Strategic Data Project Fellowship. It represents the culmination of two years of conferences, Google Hangouts, workshops, and gallons and gallons of coffee. Many people helped me along the way to make this project a success, including:
 
 * My wife Samantha, for supporting me every step of the way.
 

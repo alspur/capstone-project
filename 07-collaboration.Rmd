@@ -19,9 +19,9 @@ Code reviews, when done well, can be a great way to improve code quality and fur
 
 ## Collaborative Coding
 
-Direct collaboration on analysis project code is incrediblly powerful. Instead of waiting for an analysis project to make it to a code review, collaborative coding makes the development and review of code an organically iterative process. 
+Direct collaboration on analysis project code is incredibly powerful. Instead of waiting for an analysis project to make it to a code review, collaborative coding makes the development and review of code an organically iterative process. 
 
-Collaboartive coding can be performed in-person by [pair programming](https://en.wikipedia.org/wiki/Pair_programming):
+Collaborative coding can be performed in-person by [pair programming](https://en.wikipedia.org/wiki/Pair_programming):
 
 > "Pair programming is an agile software development technique in which two programmers work together at one workstation. One, the driver, writes code while the other, the observer or navigator, reviews each line of code as it is typed in. The two programmers switch roles frequently.
 >
@@ -33,4 +33,4 @@ Git version control software and the web service GitHub are amazing tools. The l
 
 Once your team has some working knowledge of how to use Git and GitHub, it's pretty easy to start collaborating on analysis projects. If one analysis developer starts a GitHub "repo" for a project, another developer can "fork" their work, make changes and/or additions, then submit a "pull request" to merge their work into the original repo.
 
-The beauty of collaborating on code with GitHub is that it allows your team to contribute to projects asynchronously. This enables analysis developers to work together even if their locations or schedules make pair programming or in-person code reviews diffiucult. It also makes it easy for a team to have a shared collection of commonly-used code, which can further contribute to the standardization, reliablity, and speed of analysis development.
+The beauty of collaborating on code with GitHub is that it allows your team to contribute to projects asynchronously. This enables analysis developers to work together even if their locations or schedules make pair programming or in-person code reviews difficult. It also makes it easy for a team to have a shared collection of commonly-used code, which can further contribute to the standardization, reliability, and speed of analysis development.

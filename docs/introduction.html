@@ -25,7 +25,7 @@
 <meta name="author" content="Alex Spurrier">
 
 
-<meta name="date" content="2017-08-30">
+<meta name="date" content="2017-09-01">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -139,7 +139,6 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="8.2" data-path="identify-pain-points.html"><a href="identify-pain-points.html#develop-internal-solutions"><i class="fa fa-check"></i><b>8.2</b> Develop internal solutions</a></li>
 <li class="chapter" data-level="8.3" data-path="identify-pain-points.html"><a href="identify-pain-points.html#case-study-kentuckys-school-report-card-data"><i class="fa fa-check"></i><b>8.3</b> Case study: Kentucky’s School Report Card data</a></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>9</b> Conclusion</a></li>
 </ul>
 
       </nav>
@@ -161,8 +160,8 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <h1><span class="header-section-number">Chapter 1</span> Introduction</h1>
 <div id="what-this-book-covers" class="section level2">
 <h2><span class="header-section-number">1.1</span> What this book covers</h2>
-<p>Staff at many schools, districts, and state departments of education can feel like they are adrift in a sea of data. Highly skilled personnel are needed to help them navigate this information properly and chart the best possible course forward for the students they serve. More often than not, this effort will require the capacity of several analysts.</p>
-<p>Many education agencies have responded to this need by hiring multiple analysts, but they are often put to work in specific program areas and operate in isolation. This may help solve short-term data needs, but it is an under-utilization of personnel that share a valuable skill set. <strong>Data analysts, particuarly those working in education agencies, can dramatically improve their productivity, quality, and capacity by adopting collaborative practices from the software development world.</strong></p>
+<p>Staff at schools, districts, and state departments of education can feel like they are adrift in a sea of data. Highly skilled personnel are needed to help them navigate this information properly and chart the best possible course forward for the students they serve. More often than not, this effort will require the services of several data analysts.</p>
+<p>Many education agencies have responded to this need by hiring multiple analysts, but they are often put to work in specific program areas and operate in isolation from one another. This may help solve short-term data needs, but it is an under-utilization of personnel that share a valuable skill set. <strong>Data analysts, particuarly those working in education agencies, can dramatically improve their productivity, quality, and capacity by adopting collaborative practices from the software development world.</strong></p>
 </div>
 <div id="book-organization" class="section level2">
 <h2><span class="header-section-number">1.2</span> Book organization</h2>
@@ -177,7 +176,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </div>
 <div id="acknowledgements" class="section level2">
 <h2><span class="header-section-number">1.3</span> Acknowledgements</h2>
-<p>I wrote this book as part of my Capstone Project for the Strategic Data Project Fellowshop. It represents the culmination of two years of conferences, Google Hangouts, workshops, and gallons and gallons of coffee. Many people helped me along the way to make this project a success, including:</p>
+<p>I wrote this book as part of my Capstone Project for the Strategic Data Project Fellowship. It represents the culmination of two years of conferences, Google Hangouts, workshops, and gallons and gallons of coffee. Many people helped me along the way to make this project a success, including:</p>
 <ul>
 <li><p>My wife Samantha, for supporting me every step of the way.</p></li>
 <li><p>All of the incredible people I met through the Strategic Data Project: my fellow Cohort 7 Fellows, fellows from other cohorts, my capstone project advisor - <a href="https://github.com/jknowles">Jared Knowles</a>, and all of the SDP staff.</p></li>
@@ -199,12 +198,12 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 ##  language (EN)                        
 ##  collate  en_US.UTF-8                 
 ##  tz       America/New_York            
-##  date     2017-08-30</code></pre>
+##  date     2017-09-01</code></pre>
 <pre><code>## Packages -----------------------------------------------------------------</code></pre>
 <pre><code>##  package    * version date       source                          
 ##  backports    1.1.0   2017-05-22 CRAN (R 3.4.0)                  
 ##  base       * 3.4.0   2017-04-21 local                           
-##  bookdown   * 0.4     2017-05-20 CRAN (R 3.4.0)                  
+##  bookdown     0.4     2017-05-20 CRAN (R 3.4.0)                  
 ##  compiler     3.4.0   2017-04-21 local                           
 ##  datasets   * 3.4.0   2017-04-21 local                           
 ##  devtools     1.13.3  2017-08-02 CRAN (R 3.4.0)                  
@@ -212,23 +211,18 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 ##  evaluate     0.10.1  2017-06-24 CRAN (R 3.4.0)                  
 ##  graphics   * 3.4.0   2017-04-21 local                           
 ##  grDevices  * 3.4.0   2017-04-21 local                           
-##  hms          0.3     2016-11-22 CRAN (R 3.4.0)                  
 ##  htmltools    0.3.6   2017-04-28 CRAN (R 3.4.0)                  
 ##  knitr        1.17    2017-08-10 cran (@1.17)                    
 ##  magrittr     1.5     2014-11-22 CRAN (R 3.4.0)                  
 ##  memoise      1.1.0   2017-04-21 CRAN (R 3.4.0)                  
 ##  methods    * 3.4.0   2017-04-21 local                           
-##  R6           2.2.2   2017-06-17 CRAN (R 3.4.0)                  
 ##  Rcpp         0.12.12 2017-07-15 cran (@0.12.12)                 
-##  readr        1.1.1   2017-05-16 CRAN (R 3.4.0)                  
-##  rlang        0.1.1   2017-05-18 CRAN (R 3.4.0)                  
 ##  rmarkdown    1.6     2017-06-15 CRAN (R 3.4.0)                  
 ##  rprojroot    1.2     2017-01-16 CRAN (R 3.4.0)                  
 ##  rstudioapi   0.6     2016-06-27 CRAN (R 3.4.0)                  
 ##  stats      * 3.4.0   2017-04-21 local                           
 ##  stringi      1.1.5   2017-04-07 CRAN (R 3.4.0)                  
 ##  stringr      1.2.0   2017-02-18 CRAN (R 3.4.0)                  
-##  tibble       1.3.3   2017-05-28 CRAN (R 3.4.0)                  
 ##  tools        3.4.0   2017-04-21 local                           
 ##  utils      * 3.4.0   2017-04-21 local                           
 ##  withr        2.0.0   2017-08-14 Github (jimhester/withr@190d293)

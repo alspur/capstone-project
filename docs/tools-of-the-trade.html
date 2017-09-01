@@ -25,7 +25,7 @@
 <meta name="author" content="Alex Spurrier">
 
 
-<meta name="date" content="2017-08-30">
+<meta name="date" content="2017-09-01">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -139,7 +139,6 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="8.2" data-path="identify-pain-points.html"><a href="identify-pain-points.html#develop-internal-solutions"><i class="fa fa-check"></i><b>8.2</b> Develop internal solutions</a></li>
 <li class="chapter" data-level="8.3" data-path="identify-pain-points.html"><a href="identify-pain-points.html#case-study-kentuckys-school-report-card-data"><i class="fa fa-check"></i><b>8.3</b> Case study: Kentucky’s School Report Card data</a></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>9</b> Conclusion</a></li>
 </ul>
 
       </nav>
@@ -160,22 +159,22 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <div id="tools-of-the-trade" class="section level1">
 <h1><span class="header-section-number">Chapter 4</span> Tools of the trade</h1>
 <p>Before you start engaging in analysis development work within your agency, you’ll need to make sure you have the right tools to get the job done.</p>
-<p>There are two software tools every analyst should utilize: a script-based data analysis software platform and a version control system.</p>
+<p>There are two software tools every analyst should utilize: a script-based statistical software platform and a version control system.</p>
 <div id="data-analysis-software" class="section level2">
 <h2><span class="header-section-number">4.1</span> Data analysis software</h2>
-<p>The most commonly used data analysis software is Microsoft Excel. While nearly every analyst cuts their teeth crafting spreadsheets and pivot tables in this popular software, it’s not an ideal platform for professional analysis developers. Excel’s cell-based structure obscures the formulas that drive analysis work, making it hard for others (and often yourself) to understand what’s actually going on “under the hood.”</p>
-<p>Scripting-based data analysis languages are the cure for the common spreadsheet. They make the entire analysis process transparent by explicitly stating what actions will happen and the order in which they will be executed. This helps to not only clarify your own analytic approach, it also makes it much easier to catch bugs in your analyses.</p>
+<p>The most commonly used data analysis software is Microsoft Excel. While nearly every analyst cuts their teeth crafting spreadsheets and pivot tables in Excel, it’s not an ideal platform for professional analysis developers. Excel’s cell-based structure obscures the formulas that drive analysis work, making it hard for others (and often yourself) to understand what’s actually going on “under the hood.”</p>
+<p>Scripting-based statistical software packages are the cure for the common spreadsheet. They make the entire analysis process transparent by explicitly stating what actions will happen and the order in which they will be executed. This helps to not only clarify and codify your analytic approach, it also makes it much easier to catch bugs in your analyses.</p>
 <div id="the-case-for-r" class="section level3">
 <h3><span class="header-section-number">4.1.1</span> The case for R</h3>
-<p>There are many software packages that are well-suited for data analysis, but I use and heartily recommend using R as your main platform for data analysis. It is free (a very important feature to analysis developers working in the public/non-profit sectors), open-source, and has a vibrant community of developers and practitioners working to improve the language.</p>
+<p>There are many software packages that are well-suited for data analysis, but I use and heartily recommend using R as your main platform for data analysis. R is free (a very important feature to analysis developers working in the public/non-profit sectors), open-source, and has a vibrant community of developers and practitioners working to improve the language.</p>
 <p>One of the best features of the R language is the comprehensive and diverse collection of <a href="https://cran.r-project.org">packages available on CRAN (the Comprehensive R Archive Network)</a>. Packages are the way users in the R community share the tools they create - they contain some combination of R code, documentation, and data. Some of the most popular packages allow users to easily perform statistical operations, create plots, and manipulate their data.</p>
 <p>R users are also able to take advantage of one of the best integrated development environments (IDE’s), <a href="http://www.rstudio.com">RStudio</a>. This freely available software allows users to interact with an R console, write scripts, view plots, and more through a graphical user interface (GUI). RStudio also has built-in functionality to work with some of the most popular version control systems, including Git and GitHub (more on that later).</p>
-<p>Perhaps the greatest advantage R has over other data analysis software packages is its community. Package development and support is a big part of this, but the R community is also very active in supporting the growth and development of new R users. There are many free ways to get started learning R, from courses on <a href="http://www.coursera.org">Coursera</a> to <a href="http://www.bookdown.org">online books</a>. If you’re looking for a place to get started, I recommend <a href="http://r4ds.had.co.nz/">R for Data Science</a>.</p>
+<p>Perhaps the greatest advantage R has over other data analysis software packages is its community. Package development and support is a big part of this, but the R community is also very active in supporting the growth and development of new R users. There are many free ways to get started learning R, from courses on <a href="https://www.datacamp.com">DataCamp</a> and <a href="http://www.coursera.org">Coursera</a> to <a href="http://www.bookdown.org">online books</a>. If you’re looking for a place to get started, I recommend <a href="http://r4ds.had.co.nz/">R for Data Science</a>.</p>
 </div>
 </div>
 <div id="version-control" class="section level2">
 <h2><span class="header-section-number">4.2</span> Version control</h2>
-<p>At some point, we’ve all worked on a project where we’ve saved multiple versions of a file. “Save as…” is a great tool for simple projects when you’re going from “v1” to “v2” to “final_draft,” but we can quickly push on the edges of this approach’s usefulness.</p>
+<p>At some point, we’ve all worked on a project where we’ve saved multiple versions of a file. “Save as…” is a great tool for simple projects when you’re going from “v1” to “v2” to “final_draft,” but it’s very easy to push on the edges of this approach’s usefulness.</p>
 <p>If you want to go back to an earlier iteration of your work, it’s hard to know which version you’re looking for or what changed from “v3” to “v4.” If you’re working with multiple people, emailing documents back and forth, it’s amazing how quickly you can lose track of which “v3FINAL” document is the version you want to be looking at right now - is it the one Jane sent yesterday or is the one Johnny sent today?</p>
 <p>Version control systems help to alleviate these problems. Instead of requiring you to save multiple versions of one file, version control software allows you to have one file, but <em>track all of the changes made since its inception.</em></p>
 <p>The most commonly used version control system is Git, which can be paired with the GitHub service to keep a copy of your documents and the changes you’ve made to them in the cloud. As mentioned above, RStudio integrates well with these services. To learn more about getting started with Git, GitHub, and RStudio, check out <a href="http://happygitwithr.com/">Happy Git and GitHub for the useR</a></p>
